@@ -27,7 +27,7 @@ html {
 }
 
 .page-heading .heading-content h1 {
-  font-size: 32px;
+  font-size: 2.4em;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.8);
   letter-spacing: 1px;
@@ -742,8 +742,8 @@ nav {
   font-size: 1.5em;
   color: #545454;
   line-height: 30px;
-  text-align: justify;
-  margin-bottom: 40px;
+  /* text-align: justify; */
+  /* margin-bottom: 40px; */
 }
 
 .skills {
@@ -1425,7 +1425,7 @@ body {
     margin-left: -9px;
     background: #fff;
     border-radius: 10px;
-    border: 4px solid rgb(255, 80, 80);
+    border: 4px solid #f4dd5b;
     z-index: 10;
   }
 
@@ -1492,8 +1492,8 @@ body {
 
 /* Our work CSS */
 .work-container {
-  padding:2em;
-  margin: 3em auto;
+  padding:1em;
+  margin: 1em auto;
   display: flex;
   width: 100%;
   align-items: center;
@@ -1782,9 +1782,15 @@ body {
 .pricing-tables .table-item {
   padding: 60px 0px;
   margin: 15px 0px;
-
+  -webkit-box-shadow: 0 0 50px #ccc;
+  border-radius:2em ;
   min-height: 470px;
   background-color: #313131;
+  transition: all .4s;
+}
+
+.pricing-tables .table-item:hover {
+  transform: scale(1.1);
 }
 
 .pricing-tables .table-item h4 {
@@ -1855,6 +1861,82 @@ body {
   border-color: #232323;
 }
 
+/* NS start */
+
+      .accordion {
+        max-width: 900px;
+        margin: 4em auto;
+      
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+      }
+      
+      .accordion .item-new {
+        box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
+        border-radius: 1em;
+        margin: 0.6em 1em;
+        padding: 1.5em;
+        cursor: pointer;
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        column-gap: 24px;
+        row-gap: 32px;
+        border-top: 4px solid transparent;
+        align-items: center;
+        transition: border-top 0.3s;
+      }
+      .accordion .item-new.open {
+        border-top: 4px solid #f4dd5b;
+      }
+      .accordion .item-new.open .hidden-box {
+        display: block;
+      }
+      .accordion .item-new.open .text {
+        color: #f4dd5b;
+      }
+      .accordion .number {
+        color: #f4dd5b;
+      }
+      .accordion .number,
+      .accordion .text {
+        font-size: 1.8em;
+        font-weight: 500;
+      }
+      
+      .accordion .item-new.open .text {
+        transition: color 0.3s;
+      }
+      .accordion .icon {
+        width: 24px;
+        height: 24px;
+        stroke: #f4dd5b;
+        transition: transform 0.5s ease-in;
+      }
+      .accordion .item-new.open .icon {
+        transform: rotate(180deg);
+      }
+      .accordion .hidden-box {
+        grid-column: 2;
+        display: none;
+        transition: display 0.5 ease-in;
+      }
+      .accordion .hidden-box p {
+        line-height: 1.6;
+        margin-bottom: 24px;
+      }
+      .accordion .hidden-box ul {
+        color: #868e96;
+        margin-left: 18px;
+        font-size: 1.5em;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+      
+
+/* NS end */
+
 /* Team Page CSS */
 a,
 a:hover,
@@ -1891,7 +1973,7 @@ a:focus {
 ul {
   margin: 0;
   padding: 0;
-  list-style: none;
+  list-style:disc;
 }
 img {
   max-width: 100%;
@@ -1948,15 +2030,18 @@ img {
 .speaker-block-three {
   position: relative;
   margin-bottom: 50px;
+  width: 100%;
 }
 .speaker-block-three .inner-box {
   position: relative;
   background-color: #fff;
   overflow: hidden;
   padding-bottom: 30px;
-  max-width: 300px;
+  max-width: 400px;
+  min-height: 270px;
   margin: 0 auto;
   overflow: hidden;
+  border: 4px solid #f4dd5b;
   border-radius: 2em;
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
   -webkit-transition: all 300ms ease;
@@ -2029,10 +2114,11 @@ img {
 }
 .speaker-block-three .info-box {
   position: relative;
-  display: inline-block;
+  /* display: inline-block; */
   padding: 10px 30px;
   padding-right: 10px;
   background-color: #f4dd5b;
+  text-align: center;
 }
 .speaker-block-three .info-box:before {
   position: absolute;
@@ -2126,8 +2212,9 @@ img {
 }
 
 .footer {
-  background-color:rgba(	244,221,91,0.7);
+  background-color:rgba(49,49,49);
   color: #fff;
+  font-size: 1.3em;
 }
 .footer-wave-svg {
   background-color: transparent;
@@ -2171,7 +2258,7 @@ img {
 }
 
 .footer-menu-name {
-  color: #fffff2;
+  color: #f4dd5b;
   font-size: 1.5em;
   font-weight: 900;
   letter-spacing: 0.1em;
@@ -2185,6 +2272,7 @@ img {
   margin-bottom: 0;
   margin-top: 10px;
   padding-left: 0;
+  line-height: 1.7em;
 }
 .footer-menu-list li {
   margin-top: 5px;
@@ -2223,7 +2311,7 @@ img {
   margin-top: 30px;
 }
 .footer-call-to-action-title {
-  color: #fffff2;
+  color: #f4dd5b;
   font-size: 1.5em;
   font-weight: 900;
   letter-spacing: 0.1em;
@@ -2322,7 +2410,8 @@ img {
 }
 
 .footer-copyright {
-  background-color:rgba(242,221,91,0.4);
+  border-top: 5px solid rgba(0, 0, 0, 0.07);
+  background-color:rgba(49,49,49,0.3);
   color: #fff;
   padding: 15px 30px;
   text-align: center;
