@@ -2245,7 +2245,7 @@ img {
 }
 
 .footer {
-  background-color:rgba(49,49,49);
+  /* background-color:rgba(49,49,49); */
   color: #fff;
   font-size: 1.3em;
 }
@@ -2279,7 +2279,7 @@ img {
 }
 
 .footer-content-column ul li a {
-  color: #fff;
+  color: black;
   text-decoration: none;
 }
 
@@ -2312,7 +2312,7 @@ img {
 }
 
 .footer-call-to-action-description {
-  color: #fffff2;
+  color: black;
   margin-top: 10px;
   margin-bottom: 20px;
 }
@@ -2443,8 +2443,8 @@ img {
 }
 
 .footer-copyright {
-  border-top: 5px solid rgba(0, 0, 0, 0.07);
-  background-color:rgba(49,49,49,0.3);
+  border-top: 1px solid rgba(0, 0, 0, 0.07);
+  background-color:rgba(0,0,0,0.1);
   color: #fff;
   padding: 15px 30px;
   text-align: center;
@@ -2457,7 +2457,7 @@ img {
 }
 
 .footer-copyright-text {
-  color: #fff;
+  color: black;
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
@@ -2466,7 +2466,7 @@ img {
 }
 
 .footer-copyright-link {
-  color: #fff;
+  color: black;
   text-decoration: none;
 }
 
@@ -2497,7 +2497,7 @@ img {
     margin-left: auto;
     margin-right: auto;
     max-width: 1230px;
-    padding: 40px 15px 1050px;
+    padding: 40px 15px 700px;
     position: relative;
   }
 }
