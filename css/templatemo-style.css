@@ -268,7 +268,7 @@ nav {
 }
 
 #video-container .video-content .inner h1 {
-  font-size: 134px;
+  font-size: 100px;
   text-transform: uppercase;
   color: #fff;
   letter-spacing: 2px;
@@ -276,28 +276,67 @@ nav {
   text-align: center;
 }
 
+.spacing {
+  letter-spacing: 5rem;
+  line-height: 1.5rem;
+}
+
+@media screen and (max-width: 1100px) {
+  #video-container .video-content .inner h1 {
+    font-size: 70px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #video-container .video-content .inner h1 {
+    font-size: 50px;
+  }
+
+  .spacing {
+    letter-spacing: 4rem;
+  }
+}
+
 @media screen and (max-width: 768px) {
   #video-container .video-content .inner h1 {
-    font-size: 110px;
+    font-size: 45px;
   }
 }
 
 @media screen and (max-width: 660px) {
   #video-container .video-content .inner h1 {
-    font-size: 90px;
+    font-size: 40px;
+  }
+
+  .spacing {
+    letter-spacing: 3rem;
   }
 }
 
 @media screen and (max-width: 550px) {
   #video-container .video-content .inner h1 {
-    font-size: 60px;
+    font-size: 40px;
+  }
+
+  .spacing {
+    letter-spacing: 2rem;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  #video-container .video-content .inner h1 {
+    font-size: 40px;
+  }
+
+  .spacing {
+    letter-spacing: 1rem;
   }
 }
 
 
 @media screen and (max-width: 370px) {
   #video-container .video-content .inner h1 {
-    font-size: 45px;
+    font-size: 30px;
   }
 }
 
@@ -975,6 +1014,7 @@ a:hover {
 
 .section-head {
   margin-bottom: 60px;
+  margin-top: 50px;
 }
 .section-head h4 {
   position: relative;
@@ -2054,7 +2094,7 @@ img {
 }
 .speakers-section-three {
   position: relative;
-  padding: 120px 0 90px;
+  padding: 50px 0 50px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
