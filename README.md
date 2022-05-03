@@ -1,4 +1,4 @@
-# brinewind-logistics
+# Brinewind Logistics
 It is a portfolio website of the company which tells us about their strategic & logistical services.
 
 # List of website sections
@@ -14,7 +14,7 @@ It is a portfolio website of the company which tells us about their strategic & 
 10. Contact
 
 # Steps to setting-up locally
-1. Clone this repo using _git clone https://github.com/Badrinath-Gonnabattula/brinewind-logistics.git_
+1. Clone this repo using "_git clone https://github.com/Badrinath-Gonnabattula/brinewind-logistics.git_"
 2. After cloning, navigate into the folder and open the index.html file.
 3. And **BOOM**, there you go!
 
